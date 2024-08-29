@@ -120,7 +120,7 @@ function main() {
 
                 const latestBuild = buildObjects[0];
                 const currentDate = new Date().toISOString().slice(0, 10).replace(/-/g, '');
-                const newRev = currentDate == latestBuild.buildDate ? latestBuild.buildRev + 1 : 1;
+                const newRev = currentDate == latestBuild?.buildDate ? latestBuild?.buildRev + 1 : 1;
                 const newBuildObject = {
                     buildNumber: `${currentDate}.${newRev}`,
                     buildDate: currentDate,
