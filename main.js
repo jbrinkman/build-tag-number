@@ -127,7 +127,7 @@ function main() {
                     buildRev: newRev
                 };
 
-                console.log(`Last build nr was ${latestBuild.buildNumber}.`);
+                console.log(`Last build nr was ${latestBuild?.buildNumber}.`);
 
                 nextBuildNumber = newBuildObject.buildNumber;
                 console.log(`Updating build counter to ${nextBuildNumber}...`);
