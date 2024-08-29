@@ -11,6 +11,9 @@ inputs:
   prefix:
     description: 'Prefix for the build-number-<num> tag to make it unique if tracking multiple build numbers'
     required: false
+  dailybuild:
+    description: 'Should the build-number reset daily. This is useful for creating date based build numbers e.g. 20240929.1'
+    required: false
 
 outputs:
   build_number:
